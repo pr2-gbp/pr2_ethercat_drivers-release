@@ -1,0 +1,20 @@
+ros-indigo-fingertip-pressure (1.8.13-1trusty) trusty; urgency=high
+
+
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Tue, 13 Jan 2015 05:00:00 -0000
+
+ros-indigo-fingertip-pressure (1.8.11-1trusty) trusty; urgency=high
+
+
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Tue, 30 Sep 2014 04:00:00 -0000
+
+ros-indigo-fingertip-pressure (1.8.9-1trusty) trusty; urgency=high
+
+  * Bug-fix: Python executables in fingertip_pressure were installed without proper permissions.
+  * Contributors: Georg Bartels
+
+ -- Austin Hendrix <ahendrix@willowgarage.com>  Mon, 29 Sep 2014 04:00:00 -0000
+
+

@@ -1,0 +1,12 @@
+Source: ros-lunar-pr2-ethercat-drivers
+Section: misc
+Priority: extra
+Maintainer: ROS Orphaned Package Maintainers <ros-orphaned-packages@googlegroups.com>
+Build-Depends: debhelper (>= 9.0.0), ros-lunar-catkin
+Homepage: http://ros.org/wiki/pr2_ethercat_drivers
+Standards-Version: 3.9.2
+
+Package: ros-lunar-pr2-ethercat-drivers
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lunar-ethercat-hardware, ros-lunar-fingertip-pressure
+Description: This stack contains drivers for the ethercat system and the peripherals that connect to it: motor control boards, fingertip sensors, texture projector, hand accelerometer.

@@ -1,3 +1,29 @@
+## pr2_ethercat_drivers (lunar) - 1.8.18-0
+
+The packages in the `pr2_ethercat_drivers` repository were released into the `lunar` distro by running `/usr/bin/bloom-release -y pr2_ethercat_drivers --rosdistro lunar --track lunar` on `Tue, 12 Mar 2019 09:03:52 -0000`
+
+These packages were released:
+- `ethercat_hardware`
+- `fingertip_pressure`
+- `pr2_ethercat_drivers`
+
+Version of package(s) in repository `pr2_ethercat_drivers`:
+
+- upstream repository: https://github.com/pr2/pr2_ethercat_drivers.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.8.18-0`
+
+Versions of tools used:
+
+- bloom version: `0.7.2`
+- catkin_pkg version: `0.4.8`
+- rosdep version: `0.15.0`
+- rosdistro version: `0.7.2`
+- vcstools version: `0.1.40`
+
+
 ## pr2_ethercat_drivers (kinetic) - 1.8.17-0
 
 The packages in the `pr2_ethercat_drivers` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release pr2_ethercat_drivers --rosdistro kinetic --track kinetic` on `Wed, 14 Feb 2018 11:47:16 -0000`

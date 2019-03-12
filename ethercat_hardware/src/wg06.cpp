@@ -34,6 +34,8 @@
 
 #include <iomanip>
 
+#include <algorithm>
+
 #include <math.h>
 #include <stddef.h>
 
@@ -721,7 +723,7 @@ bool WG06::unpackFT(WG06StatusWithAccelAndFT *status, WG06StatusWithAccelAndFT *
 
   unsigned new_samples = (unsigned(status->ft_sample_count_) - unsigned(last_status->ft_sample_count_)) & 0xFF;
   ft_sample_count_ += new_samples;
-  int missed_samples = std::max(int(0), int(new_samples) - MAX_FT_SAMPLES);
+  int missed_samples = std::max(int(0), int(new_samples) - int(MAX_FT_SAMPLES));
   ft_missed_samples_ += missed_samples;
   unsigned usable_samples = min(new_samples, MAX_FT_SAMPLES); 
 
@@ -733,6 +735,9 @@ bool WG06::unpackFT(WG06StatusWithAccelAndFT *status, WG06StatusWithAccelAndFT *
 
   // Make room in data structure for more f/t samples
   ft_state.samples_.resize(usable_samples);
+
+  // add side "l" or "r" to frame_id
+  string ft_link_id = string(actuator_info_.name_).substr(0,1) + "_force_torque_link";
 
   // If any f/t channel is overload or the sampling rate is bad, there is an error.
   ft_state.good_ = ( (!ft_sampling_rate_error_) && 
@@ -789,6 +794,7 @@ bool WG06::unpackFT(WG06StatusWithAccelAndFT *status, WG06StatusWithAccelAndFT *
   if ( (usable_samples > 0) && (ft_publisher_ != NULL) && (ft_publisher_->trylock()) )
   {
     ft_publisher_->msg_.header.stamp = current_time;
+    ft_publisher_->msg_.header.frame_id = ft_link_id;
     ft_publisher_->msg_.wrench = ft_state.samples_[usable_samples-1];
     ft_publisher_->unlockAndPublish();
   }

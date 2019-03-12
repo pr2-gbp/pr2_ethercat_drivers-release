@@ -66,7 +66,7 @@ tracks:
     release_tag: :{version}
     ros_distro: lunar
     vcs_type: git
-    vcs_uri: null
+    vcs_uri: https://github.com/pr2/pr2_ethercat_drivers.git
     version: :{auto}
   melodic:
     actions:
@@ -89,5 +89,5 @@ tracks:
     release_tag: :{version}
     ros_distro: melodic
     vcs_type: git
-    vcs_uri: null
+    vcs_uri: https://github.com/pr2/pr2_ethercat_drivers.git
     version: :{auto}

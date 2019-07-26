@@ -1,3 +1,29 @@
+## pr2_ethercat_drivers (melodic) - 1.8.19-1
+
+The packages in the `pr2_ethercat_drivers` repository were released into the `melodic` distro by running `/usr/bin/bloom-release pr2_ethercat_drivers --rosdistro melodic --track melodic` on `Fri, 26 Jul 2019 02:56:50 -0000`
+
+These packages were released:
+- `ethercat_hardware`
+- `fingertip_pressure`
+- `pr2_ethercat_drivers`
+
+Version of package(s) in repository `pr2_ethercat_drivers`:
+
+- upstream repository: https://github.com/pr2/pr2_ethercat_drivers.git
+- release repository: https://github.com/pr2-gbp/pr2_ethercat_drivers-release.git
+- rosdistro version: `1.8.18-0`
+- old version: `1.8.18-0`
+- new version: `1.8.19-1`
+
+Versions of tools used:
+
+- bloom version: `0.8.0`
+- catkin_pkg version: `0.4.12`
+- rosdep version: `0.15.2`
+- rosdistro version: `0.7.4`
+- vcstools version: `0.1.40`
+
+
 ## pr2_ethercat_drivers (melodic) - 1.8.18-0
 
 The packages in the `pr2_ethercat_drivers` repository were released into the `melodic` distro by running `/usr/bin/bloom-release -y pr2_ethercat_drivers --rosdistro melodic --track melodic` on `Tue, 12 Mar 2019 09:09:13 -0000`

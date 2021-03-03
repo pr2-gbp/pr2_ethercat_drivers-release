@@ -1,3 +1,29 @@
+## pr2_ethercat_drivers (noetic) - 1.9.0-1
+
+The packages in the `pr2_ethercat_drivers` repository were released into the `noetic` distro by running `/usr/bin/bloom-release pr2_ethercat_drivers -r noetic -t noetic` on `Wed, 03 Mar 2021 04:55:16 -0000`
+
+These packages were released:
+- `ethercat_hardware`
+- `fingertip_pressure`
+- `pr2_ethercat_drivers`
+
+Version of package(s) in repository `pr2_ethercat_drivers`:
+
+- upstream repository: https://github.com/pr2/pr2_ethercat_drivers.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.9.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.10.0`
+- catkin_pkg version: `0.4.23`
+- rosdep version: `0.20.0`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 ## pr2_ethercat_drivers (melodic) - 1.8.19-1
 
 The packages in the `pr2_ethercat_drivers` repository were released into the `melodic` distro by running `/usr/bin/bloom-release pr2_ethercat_drivers --rosdistro melodic --track melodic` on `Fri, 26 Jul 2019 02:56:50 -0000`
